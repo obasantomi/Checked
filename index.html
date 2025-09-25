@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checked web</title>
+    <link rel="stylesheet" href="css /normalize (2).css" />
+    <link rel="stylesheet" href="css /style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Main page -->
+    <div class="container" id="main-page">
+      <div class="logo">
+        <i class="fas fa-list-check"></i>
+        <h2>CHECKED</h2>
+      </div>
+
+      <!-- Header -->
+      <header>
+        <!-- Filters -->
+        <div class="filters-container">
+          <div class="filters">
+            <span class="filter__item" id="overview">Overview</span>
+            <span class="filter__item" id="unchecked">Unchecked</span>
+            <span class="filter__item" id="checked">Checked</span>
+          </div>
+        </div>
+
+        <!-- Task-modification -->
+        <div class="task-modification">
+          <div class="input-group">
+            <input
+              type="text"
+              placeholder="Enter task description..."
+              class="description-input"
+              id="description-input"
+              autocomplete="off"
+            />
+          </div>
+          <button type="submit" class="add-task-btn" id="add-task-btn">
+            Add new task <i class="fas fa-plus-circle"></i>
+          </button>
+        </div>
+      </header>
+
+      <!-- Task list -->
+      <div class="checked__body">
+        <ul class="task-items">
+          <!-- Task item template -->
+          <!-- <li class="task-item">
+            <div class="task-info">
+              <span class="checkbox checked" id="checkbox"></span>
+              <span class="task-description" id="task-description"
+                >Sample Task Description</span
+              >
+            </div>
+            <span class="delete-btn" id="delete-btn"><i class="fas fa-trash-alt"></i></span>
+          </li> -->
+          <!-- More task items can be added here -->
+        </ul>
+
+        <footer>
+          <div class="tasks-left-container" id="tasks-left-container">
+            <span class="tasks-done" id="tasks-done">0</span> /
+            <span class="tasks-items" id="total-tasks">0</span> Tasks checked.
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
