@@ -43,11 +43,11 @@ body {
   color: var(--color-accent);
 }
 
-#menu-bar:hover {
+/* #menu-bar:hover {
   cursor: pointer;
   color: var(--color-accent-strong);
   transform: translateX(3px);
-}
+} */
 
 .logo h2 {
   font-size: 1.5rem;
@@ -58,10 +58,10 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.logo:hover {
+/* .logo:hover {
   cursor: pointer;
   color: var(--color-accent-strong);
-}
+} */
 
 .logo i {
   margin-right: 0.7rem;
@@ -90,11 +90,11 @@ body {
   position: relative;
 }
 
-.filter__item:hover {
+/* .filter__item:hover {
   opacity: 0.5;
   transform: translateY(-2px);
   cursor: pointer;
-}
+} */
 
 .filter__item.active {
   opacity: 0.5;
@@ -146,12 +146,12 @@ button {
   background-color: var(--color-accent);
   transition: all 0.3s ease;
 }
-
+/* 
 button:hover {
   box-shadow: var(--shadow);
   transform: translateY(-3px);
   color: #fff;
-}
+} */
 
 button:active {
   box-shadow: none;
@@ -173,10 +173,10 @@ li {
   font-weight: 500;
 }
 
-.item:hover {
+/* .item:hover {
   color: var(--color-accent);
   transform: translateX(3px);
-}
+} */
 
 .hidden {
   display: none;
@@ -232,13 +232,13 @@ li {
   justify-content: center;
 }
 
-.delete-btn:hover {
+/* .delete-btn:hover {
   background-color: var(--color-danger);
   color: #fff;
   transform: translateY(-3px);
   box-shadow: var(--shadow);
   cursor: pointer;
-}
+} */
 
 .checkbox {
   margin-right: 1rem;
@@ -251,7 +251,7 @@ li {
   border: 2px solid var(--color-border);
 }
 
-.checkbox:hover {
+/* .checkbox:hover {
   border: 2px solid var(--color-checked);
   cursor: pointer;
   transform: translateY(-2px);
@@ -265,7 +265,7 @@ li {
   font-size: 1rem;
   color: var(--color-accent);
   position: absolute;
-}
+} */
 
 .checked {
   border: 2px solid var(--color-checked);
@@ -337,5 +337,59 @@ input[type="checkbox"] {
 
   .filter__item {
     font-size: 0.9rem;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .filter__item:hover {
+    opacity: 0.5;
+    transform: translateY(-2px);
+    cursor: pointer;
+  }
+
+  .filter__item.active {
+    opacity: 0.5;
+    transform: translateY(0);
+  }
+
+  .logo:hover {
+    cursor: pointer;
+    color: var(--color-accent-strong);
+  }
+
+  #menu-bar:hover {
+    cursor: pointer;
+    color: var(--color-accent-strong);
+    transform: translateX(3px);
+  }
+
+  button:hover {
+    box-shadow: var(--shadow);
+    transform: translateY(-3px);
+    color: #fff;
+  }
+
+  .delete-btn:hover {
+    background-color: var(--color-danger);
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+    cursor: pointer;
+  }
+
+  .checkbox:hover {
+    border: 2px solid var(--color-checked);
+    cursor: pointer;
+    transform: translateY(-2px);
+  }
+
+  .checkbox:hover::after {
+    content: "\f00c";
+    opacity: 0.4;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1rem;
+    color: var(--color-accent);
+    position: absolute;
   }
 }
